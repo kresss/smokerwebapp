@@ -10,7 +10,9 @@ FROM codenvy/node
 Command #1
 
 cd ${current.project.path}
+
 npm install && bower install
+
 gulp serve
 
 # Preview URL
