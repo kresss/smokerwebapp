@@ -3,17 +3,17 @@ Yeoman Starter project
 
 # Recipe
 
-FROM codenvy/node
+FROM [codenvy/node](https://hub.docker.com/r/codenvy/node/)
 
 # Commands
 
 Command #1
+| Command  |
+| :------------- |
+| `cd ${current.project.path}` |
+| `npm install && bower install` |
+| `gulp serve` |
 
-cd ${current.project.path}
-
-npm install && bower install
-
-gulp serve
 
 # Preview URL
 
