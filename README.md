@@ -8,6 +8,7 @@ FROM [codenvy/node](https://hub.docker.com/r/codenvy/node/)
 # Commands
 
 Command #1
+
 | Command  |
 | :------------- |
 | `cd ${current.project.path}` |
