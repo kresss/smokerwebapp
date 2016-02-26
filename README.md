@@ -15,3 +15,7 @@ FROM [codenvy/node](https://hub.docker.com/r/codenvy/node/)
 # Preview URL
 
 The app will be available at the port mapped to 9000 (Servers tab)
+
+# Factory
+
+[![Contribute](https://codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=af9r928owfulum17)

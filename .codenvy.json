@@ -1,0 +1,69 @@
+{
+  "v": "4.0",
+  "workspace": {
+    "defaultEnv": "node",
+    "environments": [
+      {
+        "name": "node",
+        "machineConfigs": [
+          {
+            "limits": {
+              "ram": 1000
+            },
+            "name": "ws-machine",
+            "type": "docker",
+            "source": {
+              "location": "http://beta.codenvy.com/api/recipe/recipedjt2e75mpeb4cjtc/script",
+              "type": "recipe"
+            },
+            "dev": true
+          }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "links": [],
+        "name": "web-nodejs-simple",
+        "attributes": {
+          "language": [
+            "java"
+          ]
+        },
+        "type": "java",
+        "source": {
+          "location": "https://github.com/che-samples/web-nodejs-simple.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "modules": [],
+        "path": "/web-nodejs-simple",
+        "problems": [],
+        "mixins": [
+          "git"
+        ]
+      }
+    ],
+    "name": "node",
+    "attributes": {},
+    "commands": [
+      {
+        "commandLine": "cd ${current.project.path} && npm install --no-bin-links && bower install",
+        "name": "web-nodejs-simple: install dependencies",
+        "attributes": {
+          "previewUrl": ""
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "cd ${current.project.path} && grunt serve",
+        "name": "web-nodejs-simple: run",
+        "attributes": {
+          "previewUrl": "http://${server.port.9000}"
+        },
+        "type": "custom"
+      }
+    ],
+    "links": []
+  }
+}
