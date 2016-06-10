@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularJsApp', [
+angular.module('smokerApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
